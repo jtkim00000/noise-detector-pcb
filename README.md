@@ -2,6 +2,8 @@
 
 This document is an indepth description and documentation of the Noise Detector PCB which I designed from scratch.
 
+![noise-detector-circuit](docs/noise-detector-circuit.png)
+
 ## Table of Contents
 - [Overview](#overview)
 - [Circuit](#circuit)
@@ -65,7 +67,7 @@ The 3-stage comparator simply uses a resistor/potentiometer network, that acts a
 
 ### Final Circuit
 
-![analog_signal_chain_diagram](docs/analog-signal-chain-diagram.png)
+![analog_signal_chain_diagram](docs/analog_signal_chain_diagram.png)
 
 The diagram above describes the analog signal chain uses to connect all submodules. The microphone output feeds into the amp, which feeds into the peak detector and time delay. The time delay control the reset of the peak detector and the peak detector output feeds into the comparator. 
 
@@ -76,3 +78,5 @@ The final circuit diagram is shown below
 ## PCB
 
 The final circuit was then converted into a PCB design in KiCAD. The design uses a 2-layer PCB, and follows the same circuit design described as above. The PCB passed all design rules checks. The majority of optimizations were in reduce trace length.
+
+![noise-detector](docs/noise_detector.png)
